@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="images/Logo/KokoMovieLogo.png" type="image/x-icon">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <style>
+
+        /* navbar css */
+        #header-nav .nav-link {
+          color: white;
+          font-size: 20px;
+          margin-left: 20px;
+    
+        }
+    
+        .menu li a {
+          text-decoration: none;
+        }
+        .nav-item :hover{
+      margin-bottom: 10px;
+    
+      
+    }
+    #header-nav .navbar-nav .nav-item .nav-link:hover {
+      color: red;
+      text-decoration: none; /* Remove underline */
+      transition: color 0.3s ease, text-shadow 0.3s ease; /* Add transition effect */
+      text-shadow: 0 0 10px red; /* Add glowing effect */
+    }
+        .menu li a:hover {
+          color: red !important;
+          opacity: 0.5;
+        }
+    
+        #variety {
+          margin: 0.5rem;
+        }
+    
+        .btn-outline-danger,
+        .btn-outline-danger:focus {
+          outline: none;
+          box-shadow: none;
+        }
+    
+        .contactForm {
+          margin: 5px;
+        }
+    
+        /* <!------------------------Scroll to top button------------------------------------------------> */
+    
+        #scrollToTopButton {
+          position: fixed;
+          bottom: 40px;
+          right: 25px;
+          font-size: 25px;
+          z-index: 99;
+          width: 50px;
+          height: 50px;
+          background-color: red;
+          color: black;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          padding: 6px;
+          border-radius: 50%;
+        }
+    
+        #scrollToTopButton:hover,
+        i:hover {
+          background-color: white;
+          color: red;
+        }
+    
+        .btn-sm a {
+          color: white;
+          transition: all 0.3s ease;
+          float: right;
+          font-size: medium;
+        }
+    
+        .btn-sm a:hover {
+          color: red;
+          transition: all 0.3s ease;
+        }
+    
+        #nav:hover {
+          background-color: #e60e23 !important;
+    
+        }
+        #header-nav .nav-link {
+      color: white;
+      font-size: 20px;
+      margin-left: 20px;
+    }
+        @media only screen and (max-width: 1400px){
+      #header-nav .nav-link {
+        color: white;
+        font-size: 18px;
+        margin-left: 18px;
+      }
+    }
+    
+    @media only screen and (min-width: 1133px) and (max-width: 1275px) {
+      #header-nav .nav-link {
+        color: white;
+        font-size: 15px;
+        margin-left: 10px;
+      } 
+    }
+    @media only screen and (min-width: 1035px) and (max-width: 1132px) {
+      #header-nav .nav-link {
+        color: white;
+        font-size: 15px;
+        margin-left: 10px;
+      } 
+      #searchText{
+        width: 120px;
+      }
+      #submitBtn{
+        width: 60px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    @media only screen and (min-width: 993px) and (max-width: 1034px) {
+      #header-nav .nav-link {
+        color: white;
+        font-size: 14px;
+        margin-left: 10px;
+      } 
+    
+    #searchText{
+      width: 100px;
+    }
+    #submitBtn{
+      width: 50px;
+      display: flex;
+      justify-content: center;
+    }
+    }
+      </style>
+</head>
+<body>
+
+    <div class="scroll-bar">
+        <!--Navbar Dimulai-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="home.html"><img src="images/KokoMovieFinal.png" alt="" width="60" 
+                    height="40"></a>
+                <button id="nav" class="navbar-toggler" id="nav" style="background-color: #8b0000;" type="button" data-bs-toggler="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active s" aria-current="page" href="home.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="movie.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-series.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Web series</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kids.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">kids</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tv.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">TV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">contact us</a>
+                        </li>
+                        <li>
+                            <!--Genre Dropdown dimulai-->
+                            <div>
+                              <div class="dropdown" style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+                                <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size: 20px;">
+                                  Genre
+                                </button>
+                                <div class="dropdown-content" style="color: white;">
+                                  <a href="popular.html">Popular</a>
+                                  <a href="crime.html">Crime</a>
+                                  <a href="thriller.html">Thriller</a>
+                                  <a href="action.html">Action</a>
+                                  <a href="fantasy.html">Sci-fi & Fantasy</a>
+                                  <a href="documentary.html">Documentary</a>
+                                  <a href="horror.html">Horror</a>
+                                  <a href="drama.html">Drama</a>
+                                  <a href="war.html">War & Politics</a>
+                                  <a href="comedy.html">Comedy</a>
+                                  <a href="romance.html">Romance</a>
+                                  <a href="anime.html">Anime</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!--Genre Dropdown selesai-->
+                        </li>
+                        <div style="position:relative; display: inline-block; padding-top: 5px; padding-left: 15;">
+                          <li>
+                            <button type="button" class="btn btn-light" onclick="logout()">Log Out</button>
+                          </li>
+                        </div>
+                    </ul>
+                    <form id="searchForm" class="d-flex">
+                      <input type="text" id="searchText" placeholder="Search" aria-label="Search" class="form-control me-2">
+                      <button class="btn btn-danger" type="submit">Search</button>
+                    </form>
+                </div>
+          </div>
+        </nav>
+
+        <!--Navbar Selesai-->
+
+        <div class="container">
+            <div id="movies" class="row"></div>
+        </div>
+        <hr>
+
+        <div class="box">
+            <div class="text">
+                <h1>Contact <span class="red">Us</span></h1>
+                <div class="redline"></div>
+                <p>Have Questions ? we have answer </p>
+            </div>
+        </div>
+
+        <div class="touch">
+            <h2>Get In Touch</h2>
+            <div class="redline"></div>
+        </div>
+            <div class="container fill">
+                <div class="forthis">
+                <form action="#" name="contact-form" id="contact-form">
+                    <div class="form-row two2">
+                        <div class="form-group col-md-6 column">
+                            <input type="text" class="form-control input" id="firstname" name="firstname" placeholder="">
+                            <label for="firstname" class="">FirstName</label>
+                            <div class="underline">
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 column">
+                            <input type="text" class="form-control input" id="lastname" name="lastname" placeholder=" " >
+                            <label for="lastname" class="">LastName</label>
+                            <div class="underline"></div>
+                          </div>
+                    </div>
+                    <div class="form-row one1">
+                        <div class="form-group col-md-6 column">
+                            <input type="text" class="form-control input" id="email" name="email" placeholder=" ">
+                            <label for="email">Email</label>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="form-group col-md-6 column">
+                            <input type="text" class="form-control input" id="phone" name="phone" placeholder=" ">
+                            <label for="phone">Phone number</label>
+                            <div class="underline"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group column">
+                            <input type="text" class="form-control input" id="subject" name="subject" placeholder=" ">
+                            <label for="subject">subject</label>
+                            <div class="underline extra"></div>
+                        </div>
+                    </div>
+                    <div class="form-row size">
+                        <div class="form-group column">
+                            <textarea type="text" class="form-control input" name="message" id="message" rows="5"  placeholder=" "></textarea>
+                            <label for="message" class="">Message</label>
+                            <div class="underline extra gap"></div>
+                        </div>  
+                    </div>
+                    <div class="btn-sm">
+                        <input type="submit" class="sm-button" id="submit-btn">
+                    </div>
+                </form>
+            </div>
+            </div>
+        
+    
+        <!--Address-->
+
+        <div class="container address">
+            <div class="row add-row">
+                <div class="col-sm-6">
+                    <h3>Our Address</h3>
+                    <div class="redline-address">
+                        <p>Letjen S parman</p>
+                        <p>No .1</p>
+                        <p>Tomang</p>
+                        <P>Jakarta</P>
+                        <div class="phone-e">
+                            <p><span class="glyphicon glyphicon-envelope"></span>info@kokomovie.com</p>
+                            <p><span class="glyphicon glyphicon-phone"></span>+62-12345-67890</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- offcanva JS and footer js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+
+        <div class="bottom-gap"></div>
+
+
+        <!----------------Footer------------------------>
+        <div id="waterdrop"></div>
+        <footer class="footer">
+          <hr class="footer-hr">
+          <div class="footer-content">
+            <div class="footer-left">
+              <a href="home.html"><img class="footer-logo" src="images/KokoMovieFinal.png" alt="" width="30"
+                  height="24"></a>
+              <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
+            </div>
+            <div class="footer-middle">
+              <h2 class="footer-heading">Follow Us</h2>
+              <ul class="footer-middle-list icons">
+                <a class="footer-links" href="#" target="_blank"><i
+                    class="fab fa-facebook-f facebook" style="color:red"></i></a>
+                <a class="footer-links" href="#" target="_blank"><i
+                    class="fab fa-twitter twitter" style="color:red"></i></a>
+                <a class="footer-links" href="#" target="_blank"><i
+                    class="fab fa-linkedin linkedin" style="color:red"></i></a>
+                <a class="footer-links" href="#" target="_blank"><i
+                    class="fab fa-instagram instagram" style="color:red"></i></a>
+                <a class="footer-links" href="#" target="_blank"><i
+                    class="fab fa-github github" style="color:red"></i></a>
+              </ul>
+            </div>
+            <div class="footer-middle">
+              <h2 class="footer-heading">Services</h2>
+              <ul class="footer-middle-list">
+                <li class="footer-middle-list-item"><a href="home.html">Enjoy Latest Movies</a> </li>
+                <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
+                <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
+                <li class="footer-middle-list-item"><a href="news.html">Coming soon</a> </li>
+                <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
+              </ul>
+            </div>
+            <div class="footer-right">
+              <p class="footer-links">
+              <h2 class="footer-heading">Contact Us</h2>
+              <p class="footer-bottom-tagline">Feel free to contact us.</p>
+              <a class="footer-contact-button" href="contactus.html">Contact</a>
+              </p>
+            </div>
+          </div>
+          <hr class="footer-hr">
+        </footer>
+    
+        <!--------------Scroll back to top-------------------------->
+        <button id="scrollToTopButton" title="Go to top">
+          <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </button>
+        <script>
+          $(document).ready(function () {
+            var scrollTopButton = document.getElementById("scrollToTopButton");
+            window.onscroll = function () { scrollFunction() };
+    
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopButton.style.display = "block";
+              } else {
+                scrollTopButton.style.display = "none";
+              }
+            }
+    
+            $("#scrollToTopButton").click(function () {
+              $('html ,body').animate({ scrollTop: 0 }, 800)
+            });
+          });
+        </script>
+    
+        <!--Footer Scripts-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+      <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="js/api.js"></script>
+    
+      <script>
+        jQuery('#waterdrop').raindrops({
+          color: '#292c2f',
+          canvasHeight: 150,
+          density: 0.1,
+          frequency: 20
+        });
+      </script>
+      <script>
+        function logout(){
+          window.location.replace("login.html");
+        }
+        </script>
+      <!-- bootsstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+      <script src="js/script.js"></script>
+</body>
+</html>

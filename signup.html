@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="images/Logo/KokoMovieLogo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+     <!--Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/signup.css">
+
+</head>
+<body>
+    <div class="logo">
+        <a href="home.html">
+            <img src="images/KokoMovieFinal.png" class="logo">
+        </a>
+    </div>
+    <div class="login-div">
+        <form class="login"
+         onsubmit="return SignUp()" 
+         name="regform" 
+         autocomplete="off"
+         >
+         <h1 class="sign">Sign Up</h1>
+         <div id="errormessage"></div>
+         <span class="separator"></span>
+         <div class="input-text">
+            <input type="text" name="name" placeholder="Enter Your Name" oninput="change()">
+         </div>
+         <div class="input-text">
+            <input type="email" name="email" placeholder="Enter Your Email" oninput="change()">
+         </div>
+         <div class="input-text">
+            <input type="password" name="password" placeholder="Enter Your password" id="pass_signup" oninput="change()">
+            <i class="fa fa-fw fa-eye field-icon toggle-password"></i>
+         </div>
+         <div class="input-text">
+            <input type="password" name="retypepassword" placeholder="Confirm Password" id="pass_signup2" oninput="change()">
+            <i class="fa fa-fw fa-eye field-icon toggle-password2"></i>
+         </div>
+         <input type="submit" value="Sign Up" class="signin-button">
+
+         <div class="help">  
+            <a href="#" class="color_text">Need Help?</a>
+        </div>
+        <div class="login-face">
+            <br/>
+            <div class="new-members">
+                New To KokoMovie ?
+                <a href="login.html">Sign In now</a>
+            </div>
+            <br/>
+            <div class="protection color_link help">
+                This page is protected by Google reCAPTCHA to ensure you're not a
+                bot.
+                <div class="learnmore"><a href="#">Learn more.</a></div>
+            </div>
+        </div>
+        </form>
+    </div>
+
+    <div class="bottom">
+        <div class="bottom-width">
+            <div class="questions">
+                <span>Question? <br/> Ask On: 
+                    <a href="mailto: kokomovie02@gmail.com" class="tel-link">
+                        KokoMovie02@gmail.com</a>
+                </span>
+                <select class="fa select-languange">
+                    <option>&#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
+                    <option>&#xf0ac; &nbsp;&nbsp;&nbsp;Indonesia</option>
+                </select>
+            </div>
+
+            <div>
+                <ul class="bottom-flex">
+                  <li class="list-bottom">
+                    <a href="#" class="link-bottom"> FAQ </a>
+                  </li>
+                  <li class="list-bottom">
+                    <a href="#" class="link-bottom"> Help Center </a>
+                  </li>
+                  <li class="list-bottom">
+                    <a href="#" class="link-bottom"> Terms of Use </a>
+                  </li>
+                  <li class="list-bottom">
+                    <a href="#" class="link-bottom"> Privacy </a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+    </div>
+
+    <button id="scrollToTopButton" title="Go to top" class="ml-5">
+        <i
+          class="fa fa-angle-double-up"
+          aria-hidden="true"
+          style="font-weight: bolder"
+        ></i>
+      </button>
+
+      <script src="js/sttbtn.js"></script>
+      <script src="js/toggle-password.js"></script>
+      <script src="js/toggle-password2.js"></script>
+</body>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+    integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/signup.js"></script>
+
+</htm>
